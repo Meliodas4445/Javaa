@@ -1,0 +1,21 @@
+import javax.swing.*;
+
+public class ExemploJComboBox extends JFrame {
+    public ExemploJComboBox() {
+        setTitle("Exemplo JComboBox");
+        setSize(400, 300);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        JPanel painel = new JPanel();
+        JComboBox<String>comboBox=new JComboBox<>();
+        comboBox.addItem("Item1");
+        comboBox.addItem("Item2");
+        comboBox.addItem("Item3");
+        painel.add(new JLabel("Selecione uma opção:"));
+        painel.add(comboBox);
+        add(painel);
+        setVisible(true);
+    }
+    public static void main(String[] args) {
+        new ExemploJComboBox();
+    }
+}
